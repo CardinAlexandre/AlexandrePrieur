@@ -1,0 +1,73 @@
+body {
+    font-family: Graphik,Arial,sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.h2, h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+p {
+    color: #767676;
+}
+
+.map{
+    width: 100%;
+}
+
+.map__text--visited {
+    color: #6c5cff;
+    font-weight: bold;
+}
+
+.map__text--lived {
+    color: #030303;
+    font-weight: bold;
+}
+
+.map__text--line {
+    text-decoration: line-through;
+    text-decoration-color: #6c5cff;;
+}
+
+.visited:hover {
+    opacity: 50%;
+}
+
+.lived:hover {
+    opacity: 50%;
+}
+
+path {
+    fill: gray;
+}
+
+.land.visited {
+    fill: #6c5cff;
+    cursor: pointer;
+}
+
+.land.lived {
+    fill: #030303;
+    cursor: pointer;
+}
+
+.land {
+    fill: #e4e4e4;
+    fill-opacity: 1;
+    stroke: #fff;
+}
+
+.div-tooltip {
+    display:none;
+    position:absolute;
+    background-color:#000;
+    padding:10px;
+    color:#fff;
+    border-radius:5px;
+}

@@ -1,0 +1,197 @@
+html,
+body {
+    height: 100%;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: inherit;
+    background: #121116;
+    display: flex;
+    align-items: center;
+}
+
+html {
+    width: fit-content;
+}
+
+body {
+    /*overflow-x: hidden;*/
+    color: #625c62 !important;
+}
+
+/*/------------------------------------ Logo ------------------------------------/*/
+
+.container-ap {
+    background: #121116;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*/------------------------------------ first title ------------------------------------/*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+
+}
+
+.slash-content {
+    color: #6C5BFF;
+    margin-left: 0;
+    font-weight: bold;
+}
+
+/*/------------------------------------ Projects articles ------------------------------------/*/
+
+.articles-title {
+    font-size: 1.2rem !important;
+    margin: 1em 1em 1em 1em !important;
+}
+
+.container {
+    margin-top: 1em;
+}
+
+.opacity {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.opacity:hover {
+    opacity: .5;
+}
+
+.content {
+    width: inherit;
+    height: auto;
+}
+
+.text-content{
+    margin-bottom: 2em;
+}
+
+/*/------------------------------------ Technos ------------------------------------/*/
+
+.techno {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.firstline {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.secondline {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.techno-pic {
+    width: 50px;
+    height: 50px;
+}
+
+/*/------------------------------------ About ------------------------------------/*/
+
+h3 {
+    font-size: 1.2rem !important;
+}
+
+/*/------------------------------------ Map ------------------------------------/*/
+
+section.map.center {
+    margin-top: 0;
+}
+
+#map-svg {
+    width: inherit;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+/*/------------------------------------ Footer ------------------------------------/*/
+
+.footer {
+    background: #121116;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+}
+
+.social-medias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 0 !important;
+    margin-top: 1em;
+}
+
+a {
+    color: transparent;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    color: #6c5cff;
+}
+
+footer {
+    padding-left: 1em;
+}
+
+#copy {
+    float: left;
+}
+
+/*/------------------------------------ Media Queries ------------------------------------/*/
+
+@media screen and (max-width: 767px) {
+    .ap {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .techno {
+        flex-direction: column;
+    }
+
+    .firstline {
+        margin-top: 1em;
+    }
+
+    .secondline {
+        margin-top: 1em;
+    }
+
+    .about {
+        margin-left: 1em;
+    }
+}
