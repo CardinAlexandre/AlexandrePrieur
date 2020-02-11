@@ -13,7 +13,7 @@
 </head>
 <div id="page-content">
     <div class="py-2 container-ap">
-        <img class="ap" height="70px" src="ap.png" width="70px" alt="logo"/>
+        <img alt="logo" class="ap" height="70px" src="ap.png" width="70px"/>
     </div>
     <div class="row center" style="width: 100%;">
         <div class="col-10">
@@ -23,31 +23,46 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-1 col-md-1"></div>
-            <div class="col-lg-5 col-md-12">
-                <img class="content opacity" src="backgroundDesktop.jpg" alt="project"/>
-                <div class="text-content">
-                    <h3 class="articles-title"><span class="slash-content">S</span>killHub</h3>
-                    <p>It's an open community for anyone that codes. We help you get answers to your toughest
-                        coding questions.</p>
-                </div>
+            <div class="col-lg-5 col-md-12 project">
+                <a href="http://51.68.18.120:8080/skillhub/" target="_blank">
+                    <img alt="project" class="content opacity" src="backgroundDesktop.jpg"/>
+                    <div class="text-content">
+                        <div style="width: 110px;">
+                            <h3 class="articles-title"><span class="slash-content">S</span>killHub</h3>
+                            <div class="underbar"></div>
+                        </div>
+                        <p>It's an open community for anyone that codes. We help you get answers to your toughest
+                            coding questions.</p>
+                    </div>
+                </a>
             </div>
-            <div class="col-lg-5 col-md-12">
-                <img class="content opacity" src="LTA.png" alt="project"/>
-                <div class="text-content">
-                    <h3 class="articles-title"><span class="slash-content">L</span>es Toulousaines Audacieuses</h3>
-                    <p>A hub for business women in Toulouse.</p>
-                </div>
+            <div class="col-lg-5 col-md-12 project">
+                <a href="http://51.68.18.120:8080/audacieuses/connection" target="_blank">
+                    <img alt="project" class="content opacity" src="LTA.png"/>
+                    <div class="text-content">
+                        <div style="width: 295px;">
+                            <h3 class="articles-title"><span class="slash-content">L</span>es Toulousaines Audacieuses
+                            </h3>
+                            <div class="underbar"></div>
+                        </div>
+                        <p>A hub for business women in Toulouse.</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-1 col-md-1"></div>
-            <div class="col-lg-5 col-md-12">
-                <img class="content opacity" src="WildMotorStore.png" alt="project"/>
-                <div class="text-content">
-                    <h3 class="articles-title"><span class="slash-content">W</span>ild Motor Store</h3>
-                    <p>A motorcycle store where you can buy all your dream accessories for a perfect trip. Personal
-                        project made
-                        within two days.</p>
-                </div>
+            <div class="col-lg-5 col-md-12 project">
+                <a href="http://51.68.18.120:8080/wildmotorstore/" target="_blank">
+                    <img alt="project" class="content opacity" src="WildMotorStore.png"/>
+                    <div class="text-content">
+                        <div style="width: 180px;">
+                            <h3 class="articles-title"><span class="slash-content">W</span>ild Motor Store</h3>
+                            <div class="underbar"></div>
+                        </div>
+                        <p>A motorcycle store where you can buy all your dream accessories for a perfect trip. Personal
+                            project made within two days.</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-5 col-md-12"></div>
             <div class="col-lg-1 col-md-1"></div>
@@ -829,14 +844,17 @@
 <div class="footer">
     <div class="social-medias">
         <ul class="col-10 social-icons">
-            <li><a class="social-icon" href="https://github.com/PrieurA" target="_blank"> <i class="fa fa-github fa-2x"></i></a></li>
-            <li><a class="social-icon" href="https://www.linkedin.com/in/alexandre-prieur/" target="_blank"> <i class="fa fa-linkedin fa-2x"></i></a></li>
-            <li><a class="social-icon" href="https://www.instagram.com/cardin_alex/" target="_blank"> <i class="fa fa-instagram fa-2x"></i></a></li>
+            <li><a class="social-icon" href="https://github.com/PrieurA" data-tooltip="Github" target="_blank"> <i
+                    class="fa fa-github fa-2x"></i></a></li>
+            <li><a class="social-icon" href="https://www.linkedin.com/in/alexandre-prieur/" data-tooltip="Linkedin" target="_blank"> <i
+                    class="fa fa-linkedin fa-2x"></i></a></li>
+            <li><a class="social-icon" href="https://www.instagram.com/cardin_alex/" data-tooltip="Instagram" target="_blank"> <i
+                    class="fa fa-instagram fa-2x"></i></a></li>
         </ul>
     </div>
 </div>
 <footer class="py-2 text-white-50" id="sticky-footer">
-    <small id="copy">&copy; Coded by <span class="slash-content">Alexandre Prieur</span></small>
+    <small id="copy">&copy; Coded by <span class="slash-content"><a href="mailto:cardin.alexandre@gmail.com">Alexandre Prieur</a></span></small>
 </footer>
 <script crossorigin="anonymous"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

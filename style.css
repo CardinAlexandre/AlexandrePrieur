@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    text-decoration: none;
 }
 
 #page-content {
@@ -52,6 +53,12 @@ body {
 .articles-title {
     font-size: 1.2rem !important;
     margin: 1em 1em 1em 1em !important;
+    color: #625c62 !important;
+}
+
+a {
+    text-decoration: none !important;
+    width: inherit;
 }
 
 .container {
@@ -75,6 +82,25 @@ body {
 
 .text-content{
     margin-bottom: 2em;
+}
+
+.underbar{
+    width: 0;
+    height: 5px;
+    background: rgba(100,100,200,0);
+    transform: translate(1em ,-1em);
+    position: absolute;
+    -webkit-transition: 0.5s ease;
+}
+
+.articles-title:hover ~ .underbar{
+    left: 0;
+    width: inherit;
+    background: rgba(100,100,200,1);
+}
+
+p {
+    text-decoration: none;
 }
 
 /*/------------------------------------ Technos ------------------------------------/*/
@@ -168,6 +194,16 @@ footer {
 #copy {
     float: left;
 }
+
+small > span > a {
+    color: #6c5cff;
+}
+
+small > span > a:hover {
+    color: #622fdb;
+}
+
+
 
 /*/------------------------------------ Media Queries ------------------------------------/*/
 
