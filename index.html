@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
-    <link rel="icon" type="image/png" href="ap.ico"/>
+    <link href="ap.ico" rel="icon" type="image/png"/>
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <title>Alexandre Prieur</title>
 </head>
@@ -845,17 +845,20 @@
 <div class="footer">
     <div class="social-medias">
         <ul class="col-10 social-icons">
-            <li><a class="social-icon" href="https://github.com/PrieurA" data-tooltip="Github" target="_blank"> <i
+            <li><a class="social-icon" data-tooltip="Github" href="https://github.com/PrieurA" target="_blank"> <i
                     class="fa fa-github fa-2x"></i></a></li>
-            <li><a class="social-icon" href="https://www.linkedin.com/in/alexandre-prieur/" data-tooltip="Linkedin" target="_blank"> <i
+            <li><a class="social-icon" data-tooltip="Linkedin" href="https://www.linkedin.com/in/alexandre-prieur/"
+                   target="_blank"> <i
                     class="fa fa-linkedin fa-2x"></i></a></li>
-            <li><a class="social-icon" href="https://www.instagram.com/cardin_alex/" data-tooltip="Instagram" target="_blank"> <i
+            <li><a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/cardin_alex/"
+                   target="_blank"> <i
                     class="fa fa-instagram fa-2x"></i></a></li>
         </ul>
     </div>
 </div>
 <footer class="py-2 text-white-50" id="sticky-footer">
     <small id="copy">&copy; Coded by <span class="slash-content"><a href="mailto:cardin.alexandre@gmail.com">Alexandre Prieur</a></span></small>
+    <a href="#top" id="back-top"><i class="fa fa-chevron-up"></i></a>
 </footer>
 <script crossorigin="anonymous"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -869,6 +872,31 @@
 <script crossorigin="anonymous"
         integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
         src="https://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<script>
+    $(document).ready(function () {
+        $("h1").delay("1000").fadeIn();
+
+        $("#back-top").hide();
+
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1200) {
+                    $('#back-top').fadeIn();
+                } else {
+                    $('#back-top').fadeOut();
+
+                }
+            });
+
+            $('a#back-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    });
 </script>
 <script src="tooltip.js"></script>
 </body>
